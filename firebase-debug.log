@@ -1,0 +1,25 @@
+[debug] [2025-06-24T17:44:54.291Z] ----------------------------------------------------------------------
+[debug] [2025-06-24T17:44:54.296Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mohdf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-24T17:44:54.297Z] CLI Version:   14.8.0
+[debug] [2025-06-24T17:44:54.297Z] Platform:      win32
+[debug] [2025-06-24T17:44:54.297Z] Node Version:  v22.11.0
+[debug] [2025-06-24T17:44:54.298Z] Time:          Tue Jun 24 2025 23:14:54 GMT+0530 (India Standard Time)
+[debug] [2025-06-24T17:44:54.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-24T17:44:54.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-24T17:44:54.710Z] > authorizing via signed-in user (mohdfahamb@gmail.com)
+[debug] [2025-06-24T17:44:54.711Z] [iam] checking project dungeon-storyteller for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-24T17:44:54.713Z] Checked if tokens are valid: true, expires at: 1750790307595
+[debug] [2025-06-24T17:44:54.713Z] Checked if tokens are valid: true, expires at: 1750790307595
+[debug] [2025-06-24T17:44:54.715Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions [none]
+[debug] [2025-06-24T17:44:54.715Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions x-goog-quota-user=projects/dungeon-storyteller
+[debug] [2025-06-24T17:44:54.715Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-24T17:45:06.356Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions failed, reason: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2025-06-24T17:45:06.357Z] [iam] error while checking permissions, command may fail: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/dungeon-storyteller:testIamPermissions
+[debug] [2025-06-24T17:45:06.358Z] Checked if tokens are valid: true, expires at: 1750790307595
+[debug] [2025-06-24T17:45:06.358Z] Checked if tokens are valid: true, expires at: 1750790307595
+[debug] [2025-06-24T17:45:06.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dungeon-storyteller [none]
+[debug] [2025-06-24T17:45:06.366Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/dungeon-storyteller, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/dungeon-storyteller failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2025-06-24T17:45:06.366Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/dungeon-storyteller (original: request to https://firebase.googleapis.com/v1beta1/projects/dungeon-storyteller failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
